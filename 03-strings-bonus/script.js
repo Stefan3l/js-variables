@@ -6,8 +6,8 @@ const hello = 'hello'; // NON MODIFICARE QUESTA RIGA
 // 1. Cerca un carattere in una stringa
 // Stampa l'INDICE con cui viene trovato
 // il carattere Y nella variabile city
-const cityIndex = 0;
-console.log(cityIndex); // Output: 4
+const cityIndex = cityName;
+console.log(cityIndex.indexOf(`y`) + 1); // Output: 4
 
 // 2. Sottostringhe 
 // Stampa la sottostringa "York" dalla variabile city
@@ -16,7 +16,7 @@ console.log(citySubstring); // Output: "York"
 
 // 3. Sostituzione
 // Sostituisci 'York' con 'Delhi'
-const cityReplaced = '';
+const cityReplaced = city.replace("York", "Delhi");
 console.log(cityReplaced); // Output:  "New Delhi"
 
 // 4. Template literal
